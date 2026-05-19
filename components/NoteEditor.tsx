@@ -8,7 +8,6 @@ import {
   Eye,
   Edit3,
   Copy,
-  Download,
   Pin,
   Trash2,
   CopyPlus,
@@ -138,6 +137,7 @@ export default function NoteEditor({
 
   return (
     <div
+      className="note-editor-root"
       style={{
         flex: 1,
         display: "flex",
@@ -148,6 +148,7 @@ export default function NoteEditor({
       }}
     >
       <div
+        className="note-editor-header"
         style={{
           padding: "20px 28px 16px",
           borderBottom: "1px solid var(--border-soft)",
@@ -156,6 +157,7 @@ export default function NoteEditor({
         }}
       >
         <input
+          className="note-editor-title"
           value={note.title}
           onChange={(e) => onUpdate(note.id, { title: e.target.value })}
           placeholder="Note title..."
@@ -254,9 +256,10 @@ export default function NoteEditor({
         </div>
       </div>
 
-      <div style={{ flex: 1, overflow: "hidden", position: "relative" }}>
+      <div className="note-editor-body" style={{ flex: 1, overflow: "hidden", position: "relative" }}>
         {mode === "edit" ? (
           <textarea
+            className="note-editor-content"
             value={note.body}
             onChange={(e) => onUpdate(note.id, { body: e.target.value })}
             placeholder="Paste or type your notes here... (Markdown supported)"
@@ -276,6 +279,7 @@ export default function NoteEditor({
           />
         ) : (
           <div
+            className="note-editor-preview"
             style={{
               height: "100%",
               overflowY: "auto",
@@ -293,6 +297,7 @@ export default function NoteEditor({
       </div>
 
       <div
+        className="note-editor-toolbar"
         style={{
           padding: "12px 20px",
           borderTop: "1px solid var(--border-soft)",
@@ -405,10 +410,10 @@ function ToolBtn({
       onMouseOver={(e) => {
         if (!disabled) {
           e.currentTarget.style.background = danger
-            ? "#ffe4e6"
+            ? "rgba(251,113,133,0.14)"
             : "var(--bg-subtle)";
           e.currentTarget.style.borderColor = danger
-            ? "#fca5a5"
+            ? "rgba(251,113,133,0.42)"
             : "var(--border-mid)";
         }
       }}

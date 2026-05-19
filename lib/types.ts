@@ -16,12 +16,12 @@ export interface Flashcard {
 }
 
 export const TAG_META: Record<TagType, { label: string; color: string; bg: string; border: string }> = {
-  general:   { label: 'General',   color: '#5b4cf5', bg: '#ede9ff', border: '#c4b8ff' },
-  study:     { label: 'Study',     color: '#0891b2', bg: '#e0f9ff', border: '#67e8f9' },
-  work:      { label: 'Work',      color: '#d97706', bg: '#fef3c7', border: '#fcd34d' },
-  ideas:     { label: 'Ideas',     color: '#be185d', bg: '#fce7f3', border: '#f9a8d4' },
-  important: { label: 'Important', color: '#dc2626', bg: '#ffe4e6', border: '#fca5a5' },
-  code:      { label: 'Code',      color: '#059669', bg: '#d1fae5', border: '#6ee7b7' },
+  general:   { label: 'General',   color: '#a99fff', bg: 'rgba(139,124,255,0.15)', border: 'rgba(169,159,255,0.38)' },
+  study:     { label: 'Study',     color: '#63e6ff', bg: 'rgba(34,211,238,0.12)', border: 'rgba(99,230,255,0.34)' },
+  work:      { label: 'Work',      color: '#fbbf24', bg: 'rgba(251,191,36,0.12)', border: 'rgba(251,191,36,0.34)' },
+  ideas:     { label: 'Ideas',     color: '#f472b6', bg: 'rgba(244,114,182,0.13)', border: 'rgba(244,114,182,0.34)' },
+  important: { label: 'Important', color: '#fb7185', bg: 'rgba(251,113,133,0.13)', border: 'rgba(251,113,133,0.34)' },
+  code:      { label: 'Code',      color: '#34d399', bg: 'rgba(52,211,153,0.12)', border: 'rgba(52,211,153,0.34)' },
 }
 
 export const SAMPLE_NOTES: Note[] = [

@@ -40,6 +40,7 @@ export default function FlashcardModal({
       }}
     >
       <div
+        className="modal-panel"
         style={{
           background: "var(--bg-surface)",
           borderRadius: 20,
@@ -51,7 +52,6 @@ export default function FlashcardModal({
           animation: "fadeUp 0.3s ease",
         }}
       >
-        {/* Header */}
         <div
           style={{ display: "flex", alignItems: "center", marginBottom: 24 }}
         >

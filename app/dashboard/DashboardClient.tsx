@@ -110,6 +110,7 @@ export default function Home() {
 
   return (
     <div
+      className="app-shell"
       style={{
         display: "flex",
         height: "100vh",
@@ -124,8 +125,8 @@ export default function Home() {
         onNewNote={() => setShowModal(true)}
       />
 
-      {/* Notes List Panel */}
       <div
+        className="notes-list-panel"
         style={{
           width: 300,
           minWidth: 260,
@@ -299,6 +300,7 @@ export default function Home() {
       </div>
 
       <div
+        className="editor-panel"
         style={{
           flex: 1,
           display: "flex",

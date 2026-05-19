@@ -30,8 +30,6 @@ export default function NewNoteModal({ onSave, onClose }: NewNoteModalProps) {
     onClose();
   };
 
-  const meta = TAG_META[tag];
-
   return (
     <div
       style={{
@@ -50,6 +48,7 @@ export default function NewNoteModal({ onSave, onClose }: NewNoteModalProps) {
       }}
     >
       <div
+        className="modal-panel"
         style={{
           background: "var(--bg-surface)",
           borderRadius: 20,

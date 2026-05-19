@@ -108,8 +108,6 @@ export default function NoteCard({ note, selected, onClick }: NoteCardProps) {
           {preview}
         </p>
       )}
-
-      {/* Footer */}
       <div
         style={{
           display: "flex",

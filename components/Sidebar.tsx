@@ -25,6 +25,7 @@ export default function Sidebar({
 
   return (
     <aside
+      className="app-sidebar"
       style={{
         width: 220,
         minWidth: 220,
@@ -175,10 +176,10 @@ export default function Sidebar({
             label="Pinned"
             count={pinned}
             active={activeTag === "pinned"}
-            color="#d97706"
-            bg="#fef3c7"
+            color="#fbbf24"
+            bg="rgba(251,191,36,0.12)"
             onClick={() => onTagChange("pinned")}
-            dot="#d97706"
+            dot="#fbbf24"
           />
 
           <div
