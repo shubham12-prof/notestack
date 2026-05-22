@@ -136,6 +136,7 @@ export default function Home() {
           background: "var(--bg-base)",
           overflow: "hidden",
           position: "relative",
+          marginTop: "6rem",
         }}
       >
         <div
