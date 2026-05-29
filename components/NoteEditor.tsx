@@ -267,6 +267,7 @@ export default function NoteEditor({
               background: "var(--bg-base)",
               color: "rgba(255,255,255,0.55)",
               fontFamily: "var(--font-body)",
+              height: "36vh",
             }}
             value={note.body}
             onChange={(e) => onUpdate(note.id, { body: e.target.value })}
